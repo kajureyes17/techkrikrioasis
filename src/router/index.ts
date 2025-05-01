@@ -7,6 +7,7 @@ import Services from '../views/ServicesPage.vue'
 import Portfolio from '../views/PortfolioPage.vue'
 import Contact from '../views/ContactPage.vue'
 import Blog from '../views/BlogPage.vue'
+import PageNotFound from '../views/404.vue'
 
 // ✅ Corrected: Auto-import all blog post .vue files from components/blog/etc.
 const blogPages = import.meta.glob('../components/blog/**/*.vue') 
@@ -29,6 +30,7 @@ const routes: RouteRecordRaw[] = [
   { path: '/portfolio', name: 'Portfolio', component: Portfolio },
   { path: '/contact', name: 'Contact', component: Contact },
   { path: '/blog', name: 'Blog', component: Blog },
+  { path: '/404', name: '404', component: PageNotFound },
   ...blogRoutes
 ]
 
